@@ -1,0 +1,11 @@
+# Site settings
+title: Bikelomatic Complexity
+email: skk8768@rit.edu
+description: > # this means to ignore newlines until "baseurl:"
+  The senior project site for Bikelomatic Complexity.
+baseurl: "/~bikelomatic" # the subpath of your site, e.g. /blog/
+url: "http://www.se.rit.edu" # the base hostname & protocol for your site
+github_username: bikelomatic-complexity
+
+# Build settings
+markdown: kramdown
