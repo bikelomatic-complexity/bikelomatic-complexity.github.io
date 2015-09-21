@@ -7,7 +7,7 @@ categories: update deliverables
 
 Our team has spent the first month of the semester starting up our project. We
 began by meeting with our faculty coach and project sponsor for the first time.
-You can learn more about [our team]({% post_url 2015-09-20-team %}) on the site.
+You can learn more about [our team]({{site.baseurl}}/team) on the site.
 We have also produced several deliverables that will serve to guide us the
 rest of the year. We discuss these below.
 
