@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Week Four Deliverables"
-date: 2015-09-20 13:34:30
+title: "Domain Model"
+date: 2015-09-20 12:00:00
 categories: update deliverables
 ---
 

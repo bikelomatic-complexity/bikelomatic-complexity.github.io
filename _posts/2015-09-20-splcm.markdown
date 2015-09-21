@@ -1,0 +1,122 @@
+---
+layout: post
+title: "Our Software Process Lifecycle Model"
+date: 2015-09-20 13:00:00
+categories: update deliverables
+---
+
+# Process Requirements
+Before choosing a software process lifecycle model, we must analyze constraints in the senior project program and in our interactions with the sponsor, faculty, and each other.
+
+ * The process shall support a primary, off-site stakeholder, with limited opportunity for face-to-face communication.
+ * The process shall operate with limited access to secondary stakeholders.
+ * The sponsor has indicated no desire for a continuous release mechanism
+ * The process shall include a period where documentation is refined and transferred to Adventure Cycling
+ * The process shall support a mix of individual and co-located development
+
+# Process Methodology
+We have chosen to use OpenUP as our software process lifecycle model, with some modifications. Extensive documentation of OpenUP is hosted at [http://epf.eclipse.org/wikis/openup/](http://epf.eclipse.org/wikis/openup/). We provide an overview of our process in the following sections, including a discussion on iteration structure and internal artifacts maintained.
+
+![The OpenUP Process Model](http://epf.eclipse.org/wikis/openup/publish.openup.base/guidances/supportingmaterials/resources/three_layers.jpg)
+
+# OpenUP Overview
+OpenUP is an agile process distilled from the Rational Unified Process (which was created by Ivar Jacobson at IBM). From the process documentation: “OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle. OpenUP embraces a pragmatic, agile philosophy that focuses on the collaborative nature of software development. It is a tools-agnostic, low-ceremony process that can be extended to address a broad variety of project types.”
+
+We chose the process in part because of the structured lifecycle. In Figure 2, the lifecycle is divided into four phases: Inception, Elaboration, Construction, and Transition. Depending on the phase, iterations are tuned to supports the goals of the iteration. For example, the inception phase focuses on requirements elicitation and the design of a system architecture. The team cannot leave the current phase and progress to the next one without passing criteria defined by phase milestones. These gating criteria are discussed on the process website.
+
+In particular, the transition phase will help us focus on enabling Adventure Cycling to continue the project without us (since we are students that will graduate this school year). The elaboration phase will help us form a so called executable architecture, meaning a minimal working system on top of which other features may be easily built.
+
+Another nice feature of OpenUP is iterations. Iteration planning occurs at the beginning of each two week cycle (we chose a two week period, the length is not specified). A planning document is created that outlines the goals of the iteration (some goals originate from the current phase). Work items are assigned to individuals that align with the goals of the iteration. Upon the start of an iteration, all requirements freeze (except during elicitation).
+
+We recognize that agile processes work best with an onsite stakeholder. We believe we can adapt OpenUP to support our weekly meetings with John by adding a Change Control Board. Basically, once we leave the inception phase, requirements we are working on will be locked. Both the team and sponsor must agree to unlock a requirement to change it. The current proposed practice is described later in this document.
+
+Team developers will thoroughly read and defer to the online process documentation at [http://epf.eclipse.org/wikis/openup/](http://epf.eclipse.org/wikis/openup/). The discussion provided here in the project plan is mostly meant for transparency into our process.
+
+# Project Tools
+
+## Project Management
+Our task tracking for the project will be handled through waffle.io, an integration with Github issue tracking. At the beginning of each team meeting, the waffle board is reviewed with any updates that team members have on assigned tasks. Waffle.io will allow us to automatically collect measurements for use in our IDRE chart, and abstracts the varied issue lists that we have into a single tracking board.
+
+## Source Control
+We will be using git and Github for our source control. We have set up a [Github organization](https://github.com/bikelomatic-complexity) which will contain all deliverable code for the project. The organization will contain separate code repositories for each package that we develop as part of the project. At the conclusion of the project, control of the Github organization will be rescinded to the Adventure Cycling Association.
+
+## Communication Tools
+In order to facilitate discussion between the team members, faculty coach, and the project sponsor, we will be using Slack as a communication tool. Slack allows us to establish specialized channels to organize information that is shared between the different members of the project. Most importantly, Slack will host the information for online stand-up meetings between the team members, questions for the project sponsor which are not time sensitive. Questions for the sponsor with time sensitive elements will be asked over email.
+
+# (Proposed) Change Control Board
+There will be a change control board consisting of the sponsor and the development team. This board will meet weekly during the sponsor meeting, to propose changes to existing requirements. In order to change a requirement listed on the requirements spreadsheet, we need to specify the following.
+
+ * Reason for change
+ * Priority of change
+ * Date of change
+ * Possible impacts on system in terms of other features and time delays
+ * Need both team and sponsor approval before a change may be made
+
+_Note: Old text for requirements will never be deleted_
+
+# Process Work Products
+OpenUP is an agile process, so it is meant to be low ceremony. However, it does recommend the usage of a specific set of work products associated with each phase. We will maintain the set of work products proposed by OpenUP by default. If we do not believe a work product will be beneficial, we will not create and maintain that work product. The purpose text of each work product is pulled from the online documentation.
+
+_Domain Model (Glossary)_
+
+ * To record the terms that are being used on the project so that everyone has a common understanding of them
+ * To achieve consistency by promoting the use of common terminology across the project
+ * To make explicit different stakeholders' use of the same terms to mean different things or different terms to mean the same thing
+ * To provide important terms to the Analysis and Design team.
+
+_Vision (Synopsis)_
+
+This artifact provides a high-level basis for more detailed technical requirements. It captures the technical solution by describing the high-level stakeholder requests and constraints that give an overview of the reasoning, background, and context for detailed requirements. The vision serves as input for communicating the fundamental "what and why" for the project and provides a strategy against which all future decisions can be validated.
+
+_Use Case Model_
+
+This artifact presents an overview of the intended behavior of the system. It is the basis for agreement between stakeholders and the project team in regards to the intended functionality of the system. It also guides various tasks in the software development lifecycle.
+
+_Use Cases_
+
+ * To reach a common understanding of system behavior
+ * To design elements that support the required behavior
+ * To identify test cases
+ * To plan and assess work
+ * To write user documentation.
+
+_System Wide Requirements_
+
+ * To describe the quality attributes of the system, and the constraints that the design options must satisfy to deliver the business goals, objectives, or capabilities
+ * To capture functional requirements that are not expressed as use cases
+ * To negotiate between, and select from, competing design options
+ * To assess the sizing, cost, and viability of the proposed system
+ * To understand the service-level requirements for operational management of the solution
+
+_Risk List_
+
+To capture the perceived risks to the success of the project.
+
+_Work Items List_
+
+This artifact contains a list of all of the scheduled work to be done within the project, as well as proposed work that may affect the product in this or future projects. Each work item may contain references to information relevant to carry out the work described within the work item.
+
+We are using waffle.io to implement this work product.
+
+_Iteration Plan_
+
+The main objectives of the iteration plan are to provide the team with the following:
+
+* One central place for information regarding iteration objectives
+* A detailed plan with task assignments
+* Evaluation results
+
+This artifact also helps the team to monitor the progress of the iteration, and keeps the results of the iteration assessment that may be useful for improving the next one.
+
+_Test Plan_
+
+ * To provide verification that a set of tests was run
+ * To provide information that relates to the success of those tests
+
+_User Documentation_
+
+The purpose of this work product is to provide documentation about the product for a product owner and their constituents to be able to manage the product during its development and after the project is completed.
+
+_Architecture Notebook_
+
+To capture and make architectural decisions and to explain those decisions to developers.
