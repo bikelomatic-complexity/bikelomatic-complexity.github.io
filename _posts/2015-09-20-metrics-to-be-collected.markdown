@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Metrics"
+title: "Metrics to be Collected"
 date: 2015-09-20 12:00:00
 categories: update deliverables metrics
 ---
